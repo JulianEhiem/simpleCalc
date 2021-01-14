@@ -2,37 +2,100 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.Numgrid {
+  display: grid;
+  background-color: black;
   color: white;
+  max-width: 400px;
+  height: 500px;
+  grid-template-areas: 
+  "a  b  c  d"
+  "e  f  g  h"
+  "i  j  k  l"
+  "m  n  o  p"
+  "q  q  r  s";
 }
-
-.App-link {
-  color: #61dafb;
+.NumBtns {
+  /* text-align: center; */
+  /* justify-content: center; */
+  position: relative;
+  width: 95%;
+  height: 90%;
 }
+.SpecialOps {
+  background-color: lightgray;
+}
+.MainOps {
+  background-color: orange;
+}
+.Numbers {
+  background-color: darkgray;
+}
+.btnText {
+  /* display: flexbox; */
+  position: absolute;
+ padding: 0;
+ margin: 0;
+/* text-align: center; */
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+top: 50%;
+left: 50%;
+transform: translateY(-50%);
+}
+.clear {
+  grid-area: a;
+}
+.negate {
+  grid-area: b;
+}
+.percent {
+  grid-area: c;
+}
+.divide {
+  grid-area: d;
+}
+.seven {
+  grid-area: e;
+}
+.eight {
+  grid-area: f;
+}
+.nine {
+  grid-area: g;
+}
+.times {
+  grid-area: h;
+}
+.four {
+  grid-area: i;
+}
+.five {
+  grid-area: j;
+}
+.six {
+  grid-area: k;
+}
+.minus {
+  grid-area: l;
+}
+.one {
+  grid-area: m;
+}
+.two {
+  grid-area: n;
+}
+.three {
+  grid-area: o;
+}
+.plus {
+  grid-area: p;
+}
+.zero {
+  grid-area: q;
+}
+.dot {
+  grid-area: r;
+}
+.equals {
+  grid-area: s;
 }

@@ -1,9 +1,37 @@
 .App {
   text-align: center;
 }
+.calcScreen {
+  position: relative;
+  max-width: 400px;
+  height: 120px;
+  background-color: black;
+  color: white;
+  font-size: 3.5rem;
+  text-align: end;
+}
+.screenOutput {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  bottom: 0.29rem;
+  right: 0.29rem;
+}
+
+.operation {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  font-size: 0.9rem;
+  top: 0.29rem;
+  left: 0.29rem;
+}
 
 .Numgrid {
   display: grid;
+  box-sizing: border-box;
+  grid-gap: 0.19rem;
+  padding: 0.25rem;
   background-color: black;
   color: white;
   max-width: 400px;
@@ -16,32 +44,31 @@
   "q  q  r  s";
 }
 .NumBtns {
-  /* text-align: center; */
-  /* justify-content: center; */
   position: relative;
   width: 95%;
   height: 90%;
+  font-size: 1.5rem;
 }
 .SpecialOps {
   background-color: lightgray;
+  color: black;
 }
 .MainOps {
   background-color: orange;
+  color: white;
 }
 .Numbers {
   background-color: darkgray;
 }
 .btnText {
-  /* display: flexbox; */
   position: absolute;
  padding: 0;
  margin: 0;
-/* text-align: center; */
-
 top: 50%;
 left: 50%;
-transform: translateY(-50%);
+transform: translate(-50%, -50%);
 }
+
 .clear {
   grid-area: a;
 }

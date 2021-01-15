@@ -13,37 +13,37 @@ function Calculator(){
 function Screen(){
   return (
     <>
-      <h3>This is the Screen</h3>
+      <div className="calcScreen"><p className="screenOutput">0</p><p className ="operation">+</p></div>
     </>
   )
 }
 function Numpad(){
   return (
-    <>
+    <div className="centerAll">
       <div className="Numgrid">
-        <div className="clear NumBtns SpecialOps"><h4 className = "btnText">AC</h4></div>
-        <div className="negate NumBtns SpecialOps">+/-</div>
-        <div className="percent NumBtns SpecialOps">%</div>
-        <div className="divide NumBtns MainOps">/</div>
-        <div className="seven NumBtns Numbers">7</div>
-        <div className="eight NumBtns Numbers">8</div>
-        <div className="nine NumBtns Numbers">9</div>
-        <div className="times NumBtns MainOps">x</div>
-        <div className="four NumBtns Numbers">4</div>
-        <div className="five NumBtns Numbers">5</div>
-        <div className="six NumBtns Numbers">6</div>
-        <div className="minus NumBtns MainOps">-</div>
-        <div className="one NumBtns Numbers">1</div>
-        <div className="two NumBtns Numbers">2</div>
-        <div className="three NumBtns Numbers">3</div>
-        <div className="plus NumBtns MainOps">+</div>
-        <div className="zero NumBtns Numbers">0</div>
-        <div className="dot NumBtns Numbers">.</div>
-        <div className="equals NumBtns MainOps">=</div>
+        <button className="clear"><div className=" NumBtns SpecialOps"><h4 className = "btnText">AC</h4></div></button>
+        <button className="negate"><div className=" NumBtns SpecialOps"><h4 className = "btnText">+/-</h4></div></button>
+        <button className="percent"><div className=" NumBtns SpecialOps"><h4 className = "btnText">%</h4></div></button>
+        <button className="divide"><div className=" NumBtns MainOps"><h4 className = "btnText">/</h4></div></button>
+        <button className="seven"><div className=" NumBtns Numbers"><h4 className = "btnText">7</h4></div></button>
+        <button className="eight"><div className=" NumBtns Numbers"><h4 className = "btnText">8</h4></div></button>
+        <button className="nine"><div className=" NumBtns Numbers"><h4 className = "btnText">9</h4></div></button>
+        <button className="times"><div className=" NumBtns MainOps"><h4 className = "btnText">x</h4></div></button>
+        <button className="four"><div className=" NumBtns Numbers"><h4 className = "btnText">4</h4></div></button>
+        <button className="five"><div className=" NumBtns Numbers"><h4 className = "btnText">5</h4></div></button>
+        <button className="six"><div className=" NumBtns Numbers"><h4 className = "btnText">6</h4></div></button>
+        <button className="minus"><div className=" NumBtns MainOps"><h4 className = "btnText">-</h4></div></button>
+        <button className="one"><div className=" NumBtns Numbers"><h4 className = "btnText">1</h4></div></button>
+        <button className="two"><div className=" NumBtns Numbers"><h4 className = "btnText">2</h4></div></button>
+        <button className="three"><div className=" NumBtns Numbers"><h4 className = "btnText">3</h4></div></button>
+        <button className="plus"><div className=" NumBtns MainOps"><h4 className = "btnText">+</h4></div></button>
+        <button className="zero"><div className=" NumBtns Numbers"><h4 className = "btnText">0</h4></div></button>
+        <button className="dot"><div className=" NumBtns Numbers"><h4 className = "btnText">.</h4></div></button>
+        <button className="equals"><div className=" NumBtns MainOps"><h4 className = "btnText">=</h4></div></button>
 
 
       </div>
-    </>
+    </div>
   )
 }
 

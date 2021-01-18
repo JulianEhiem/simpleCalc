@@ -1,6 +1,9 @@
 .App {
   text-align: center;
 }
+.centerAll {
+  margin: 1rem auto;
+}
 .calcScreen {
   position: relative;
   max-width: 400px;
@@ -44,10 +47,13 @@
   "q  q  r  s";
 }
 .NumBtns {
+  display: flex;
   position: relative;
   width: 95%;
   height: 90%;
   font-size: 1.5rem;
+  justify-content: center;
+  align-items: center;
 }
 .SpecialOps {
   background-color: lightgray;

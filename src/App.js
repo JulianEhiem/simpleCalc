@@ -98,10 +98,20 @@ function btnType(x){
 
 
 const Button = props => (
-  <div className= {`NumBtns ${btnType(props.children)}`} id={props.id} onClick = {() => props.handleClick()}>
+  <div className= {`NumBtns ${btnType(props.children)}`} id={props.id}
+  onClick={() => props.handleClick(props.children)}>
     {props.children}
   </div>
 )
+
+const Screen = (props) => {
+  return (<div className = "screen">{props.screen}</div>)
+  
+}
+
+const ClearButton = (props) => {
+return (<div className = {`NumBtns ${btnType(props.children)}`} onClick={props.handleClear}>{props.children}</div>)
+}
 
 class Numpad extends Component {
   constructor(props) {
@@ -112,35 +122,35 @@ class Numpad extends Component {
     };
   }
 
-  addToInput = (x) => {
-    this.setState({input: this.state.input + {x}});
+  addToInput = val => {
+    this.setState({input: this.state.input + val});
   }
-    
+  
   
 render(){
   return (
     <div className="App">
-      <div className="calcScreen"><p className="screenOutput">{this.state.input}</p><p className ="operation">+</p></div>
+      <div className="calcScreen"><Screen screen={this.state.input} /></div>
       <div className="Numgrid">
-        <Button>AC</Button>
-        <Button>+/-</Button>
-        <Button>%</Button>
-        <Button>/</Button>
-        <Button handleClick={this.addToInput(7)} id='7'>7</Button>
-        <Button>8</Button>
-        <Button>9</Button>
-        <Button>x</Button>
-        <Button>4</Button>
-        <Button>5</Button>
-        <Button>6</Button>
-        <Button>-</Button>
-        <Button>1</Button>
-        <Button>2</Button>
-        <Button>3</Button>
-        <Button>+</Button>
-        <Button>0</Button>
-        <Button>.</Button>
-        <Button>=</Button>
+        <ClearButton handleClear={()=> this.setState({input: ''})}>AC</ClearButton>
+        <Button handleClick={this.addToInput}>+/-</Button>
+        <Button handleClick={this.addToInput}>%</Button>
+        <Button handleClick={this.addToInput}>/</Button>
+        <Button handleClick={this.addToInput}>7</Button>
+        <Button handleClick={this.addToInput}>8</Button>
+        <Button handleClick={this.addToInput}>9</Button>
+        <Button handleClick={this.addToInput}>x</Button>
+        <Button handleClick={this.addToInput}>4</Button>
+        <Button handleClick={this.addToInput}>5</Button>
+        <Button handleClick={this.addToInput}>6</Button>
+        <Button handleClick={this.addToInput}>-</Button>
+        <Button handleClick={this.addToInput}>1</Button>
+        <Button handleClick={this.addToInput}>2</Button>
+        <Button handleClick={this.addToInput}>3</Button>
+        <Button handleClick={this.addToInput}>+</Button>
+        <Button handleClick={this.addToInput}>0</Button>
+        <Button handleClick={this.addToInput}>.</Button>
+        <Button handleClick={this.addToInput}>=</Button>
 
       </div>
     </div>

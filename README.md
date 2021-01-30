@@ -12,13 +12,20 @@ This is a simple react calculator built with [Math.js](https://mathjs.org/index.
 
 ### [Live Site](https://julianehiem.github.io/simpleCalc/)
 
+## Built with
+
+- [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
+- [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
+- [JS](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+- [React](https://reactjs.org/)
+- [Math.js](https://mathjs.org/index.html)
+
 
 
 ### Bugs to fix
 
 - [ ] set an upper limit on decimal places
-
-
+n
 
 ## License
 

@@ -40,11 +40,12 @@
   max-width: 400px;
   height: 500px;
   grid-template-areas: 
-  "a  b  c  d"
-  "e  f  g  h"
-  "i  j  k  l"
-  "m  n  o  p"
-  "q  q  r  s";
+
+  "e  f  g  d"
+  "i  j  k  h"
+  "m  n  o  l"
+  "q  q  r  p"
+  "a  a  a  s";
 }
 .NumBtns {
   display: flex;

@@ -1,5 +1,6 @@
 import { useState, Component } from 'react';
 import './App.css';
+import { evalDependencies, evaluate }  from 'mathjs';
 
 // function ToOutput() {
 //   const [out, setOut] = useState(9);
@@ -61,7 +62,7 @@ function btnType(x){
     }
     return btnClass;
     
-  }else if(x === '+'||x === '-'||x === '/'||x === 'x'||x === '='){
+  }else if(x === '+'||x === '-'||x === '/'||x === '*'||x === '='){
     switch(x) {
       case '+':
         btnClass = 'MainOps plus'
@@ -72,7 +73,7 @@ function btnType(x){
       case '/':
         btnClass = 'MainOps divide'
         break;
-      case 'x':
+      case '*':
         btnClass = 'MainOps times'
         break;
       case '=':
@@ -80,9 +81,9 @@ function btnType(x){
         break;
     }
     return btnClass;
-  }else if(x === 'AC'||x === '+/-'||x === '%'){
+  }else if(x === 'Clear'||x === '+/-'||x === '%'){
     switch(x) {
-      case 'AC':
+      case 'Clear':
         btnClass = 'SpecialOps clear'
         break;
       case '+/-':
@@ -124,6 +125,10 @@ class Numpad extends Component {
 
   addToInput = val => {
     this.setState({input: this.state.input + val});
+  };
+
+  handleEqual = () => {
+    this.setState({input: evaluate(this.state.input)})
   }
   
   
@@ -132,14 +137,14 @@ render(){
     <div className="App">
       <div className="calcScreen"><Screen screen={this.state.input} /></div>
       <div className="Numgrid">
-        <ClearButton handleClear={()=> this.setState({input: ''})}>AC</ClearButton>
-        <Button handleClick={this.addToInput}>+/-</Button>
-        <Button handleClick={this.addToInput}>%</Button>
+        <ClearButton handleClear={()=> this.setState({input: ''})}>Clear</ClearButton>
+        {/* <Button handleClick={this.addToInput}>+/-</Button>
+        <Button handleClick={this.addToInput}>%</Button> */}
         <Button handleClick={this.addToInput}>/</Button>
         <Button handleClick={this.addToInput}>7</Button>
         <Button handleClick={this.addToInput}>8</Button>
         <Button handleClick={this.addToInput}>9</Button>
-        <Button handleClick={this.addToInput}>x</Button>
+        <Button handleClick={this.addToInput}>*</Button>
         <Button handleClick={this.addToInput}>4</Button>
         <Button handleClick={this.addToInput}>5</Button>
         <Button handleClick={this.addToInput}>6</Button>
@@ -150,7 +155,7 @@ render(){
         <Button handleClick={this.addToInput}>+</Button>
         <Button handleClick={this.addToInput}>0</Button>
         <Button handleClick={this.addToInput}>.</Button>
-        <Button handleClick={this.addToInput}>=</Button>
+        <Button handleClick={() => this.handleEqual()}>=</Button>
 
       </div>
     </div>

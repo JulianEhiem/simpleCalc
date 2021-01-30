@@ -25,7 +25,7 @@ This is a simple react calculator built with [Math.js](https://mathjs.org/index.
 ### Bugs to fix
 
 - [ ] set an upper limit on decimal places
-n
+
 
 ## License
 

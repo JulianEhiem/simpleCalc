@@ -1,16 +1,7 @@
 import { useState, Component } from 'react';
 import './App.css';
-import { evalDependencies, evaluate }  from 'mathjs';
+import { evaluate }  from 'mathjs';
 
-// function ToOutput() {
-//   const [out, setOut] = useState(9);
-//   return (
-//     <>
-//       <p className="screenOutput">0</p>
-//     </>
-//   )
-
-// }
 
 function Calculator(){
   return (
@@ -138,8 +129,6 @@ render(){
       <div className="calcScreen"><Screen screen={this.state.input} /></div>
       <div className="Numgrid">
         <ClearButton handleClear={()=> this.setState({input: ''})}>Clear</ClearButton>
-        {/* <Button handleClick={this.addToInput}>+/-</Button>
-        <Button handleClick={this.addToInput}>%</Button> */}
         <Button handleClick={this.addToInput}>/</Button>
         <Button handleClick={this.addToInput}>7</Button>
         <Button handleClick={this.addToInput}>8</Button>
@@ -169,14 +158,14 @@ render(){
 
 function App() {
   return (
-    <>
-    <div className="App">
+  <div className="App">
+    <div>
       <h1> This is a calculator app</h1>
     </div>
     <div className="centerAll">
       <Calculator/>
     </div>
-    </>
+    </div>
   );
 }
 

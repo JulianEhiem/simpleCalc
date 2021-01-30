@@ -2,7 +2,8 @@
   text-align: center;
 }
 .centerAll {
-  margin: 1rem auto;
+  position: relative;
+  left: calc(50% - 200px);
 }
 .calcScreen {
   position: relative;

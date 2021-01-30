@@ -2,15 +2,13 @@
 
 This is a simple react calculator built with [Math.js](https://mathjs.org/index.html);
 
-<br>
-
 <h1 align="center">
 <img src="src/images/screenshot2.png" alt="Simple calculator screenshot">
 </h1>
 
-<br>
 
-### [Live Site](https://julianehiem.github.io/simpleCalc/)
+### Demo
+This is the working [demo](https://julianehiem.github.io/simpleCalc/)
 
 ## Built with
 
@@ -21,11 +19,13 @@ This is a simple react calculator built with [Math.js](https://mathjs.org/index.
 - [Math.js](https://mathjs.org/index.html)
 
 
-
 ### Bugs to fix
 
 - [ ] set an upper limit on decimal places
 
+### To do
+
+- [ ] restructure files and add comments
 
 ## License
 

@@ -9,17 +9,20 @@
   position: relative;
   max-width: 400px;
   height: 120px;
-  background-color: black;
+  background-color: red;
   color: white;
   font-size: 3.5rem;
   text-align: end;
 }
 .screen{
-  position: absolute;
+  position: relative;
   margin: 0;
   padding: 0;
-  bottom: 0.29rem;
-  right: 0.29rem;
+  top: 3rem;
+  width: 90%;
+  left: 2.2rem;
+  background-color: black;
+  overflow: none;
 }
 
 .operation {

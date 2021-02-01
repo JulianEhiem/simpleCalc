@@ -97,7 +97,7 @@ const Button = props => (
 )
 
 const Screen = (props) => {
-  return (<div className = "screen">{props.screen}</div>)
+  return (<textarea rows="1" cols="2" className="screen" maxLength="3" className="screen" value = {props.screen} />)
   
 }
 
@@ -110,7 +110,7 @@ class Numpad extends Component {
     super(props);
 
     this.state = {
-      input: ""
+      input: "",
     };
   }
 

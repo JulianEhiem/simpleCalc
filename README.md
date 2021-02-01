@@ -19,10 +19,6 @@ This is the working [demo](https://julianehiem.github.io/simpleCalc/)
 - [Math.js](https://mathjs.org/index.html)
 
 
-### Bugs to fix
-
-- [ ] set an upper limit on decimal places
-
 ### To do
 
 - [ ] restructure files and add comments

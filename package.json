@@ -1,5 +1,6 @@
 {
   "name": "react-calculator",
+  "homepage": "https://julianehiem.github.io/simpleCalc/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

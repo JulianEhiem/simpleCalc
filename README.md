@@ -21,7 +21,9 @@ This is the working [demo](https://julianehiem.github.io/simpleCalc/)
 
 ### To do
 
-- [x] restructure files and add comments
+- [x] restructure files 
+- [x] deploy on gh-pages
+
 
 ## License
 

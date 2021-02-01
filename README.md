@@ -21,7 +21,7 @@ This is the working [demo](https://julianehiem.github.io/simpleCalc/)
 
 ### To do
 
-- [ ] restructure files and add comments
+- [x] restructure files and add comments
 
 ## License
 

@@ -7,7 +7,7 @@ function App() {
   return (
   <div className="App">
     <div>
-      <h1> SimpleCalc</h1>
+      <h1> Simple Calculator</h1>
     </div>
     <div className="centerAll">
       <Numpad/>
